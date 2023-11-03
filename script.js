@@ -48,6 +48,13 @@ const myprojects = [
         tech: ["html", "css"],
         date: "october 2023"
     },
+    {
+        projectname: "StokesPrice react app",
+        icon: '<i class="fa-solid fa-dollar-sign"></i>',
+        link: "https://stokesprice.netlify.app/",
+        tech: ["React"],
+        date: "November 2023"
+    },
 
 ]
 
