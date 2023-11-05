@@ -62,6 +62,13 @@ const myprojects = [
         tech: ["React"],
         date: "November 2023"
     },
+    {
+        projectname: "Medical data  react",
+        icon: '<i class="fa-solid fa-star-of-life"></i>',
+        link: "https://medicalreportreact.netlify.app/",
+        tech: ["React"],
+        date: "November 2023"
+    },
 
 ]
 
