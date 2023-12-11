@@ -49,6 +49,13 @@ const myprojects = [
         date: "october 2023"
     },
     {
+        projectname: "Ecommerce using react ",
+        icon: '<i class="fa-solid fa-shop"></i>',
+        link: "https://shopperecommercereact.netlify.app/",
+        tech: ["React","React Router Dom","Context Api"],
+        date: "December 2023"
+    },
+    {
         projectname: "StokesPrice react app",
         icon: '<i class="fa-solid fa-dollar-sign"></i>',
         link: "https://stokesprice.netlify.app/",
