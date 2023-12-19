@@ -70,9 +70,9 @@ const myprojects = [
         date: "November 2023"
     },
     {
-        projectname: "Medical data  react",
+        projectname: "React User Data",
         icon: '<i class="fa-solid fa-star-of-life"></i>',
-        link: "https://medicalreportreact.netlify.app/",
+        link: "https://reactbanaoassignment.netlify.app/",
         tech: ["React"],
         date: "November 2023"
     },
