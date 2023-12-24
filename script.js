@@ -56,11 +56,11 @@ const myprojects = [
         date: "December 2023"
     },
     {
-        projectname: "StokesPrice react app",
-        icon: '<i class="fa-solid fa-dollar-sign"></i>',
-        link: "https://stokesprice.netlify.app/",
-        tech: ["React"],
-        date: "November 2023"
+        projectname: "Crud react app",
+        icon: '<i class="fa-solid fa-users-line"></i>',
+        link: "https://crudreactasignment.netlify.app/",
+        tech: ["React"."Redux"],
+        date: "December 2023"
     },
     {
         projectname: "Food website with react",
