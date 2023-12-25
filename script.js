@@ -52,14 +52,14 @@ const myprojects = [
         projectname: "Ecommerce using react ",
         icon: '<i class="fa-solid fa-shop"></i>',
         link: "https://shopperecommercereact.netlify.app/",
-        tech: ["React","React Router Dom","Context Api"],
+        tech: ["React", "React Router Dom", "Context Api"],
         date: "December 2023"
     },
     {
         projectname: "Crud react app",
         icon: '<i class="fa-solid fa-users-line"></i>',
         link: "https://crudreactasignment.netlify.app/",
-        tech: ["React"."Redux"],
+        tech: ["React","Redux"],
         date: "December 2023"
     },
     {
@@ -122,12 +122,12 @@ navlinks.forEach((e) => {
 
 ScrollReveal().reveal('.skill', {
     delay: 400,
-     distance: '200%',
+    distance: '200%',
     origin: 'bottom',
 });
 
 ScrollReveal().reveal('.project', {
     delay: 400,
-     distance: '200%',
+    distance: '200%',
     origin: 'bottom',
 });
