@@ -65,7 +65,7 @@ const myprojects = [
     {
         projectname: "Food website with react",
         icon: '<i class="fa-solid fa-utensils"></i>',
-        link: "https://foodwebsiteasignmentone.netlify.app/",
+        link: "https://foodwebsiteasignment.netlify.app/",
         tech: ["React"],
         date: "December 2023"
     },
