@@ -76,6 +76,13 @@ const myprojects = [
         tech: ["React"],
         date: "November 2023"
     },
+    {
+        projectname: "React Asignment",
+        icon: '<i class="fa-solid fa-chalkboard-user"></i>',
+        link: "https://fanciful-piroshki-68986b.netlify.app/",
+        tech: ["React","React Router Dom","Context API"],
+        date: "December 2023"
+    },
 
 ]
 
