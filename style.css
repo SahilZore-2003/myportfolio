@@ -11,20 +11,20 @@
     font-family: "mona-sans";
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: white;
 }
 
-body{
+body {
     background-color: black;
     color: white;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -103,25 +103,26 @@ header nav {
     z-index: 1000;
 }
 
-#navicon:hover{
+#navicon:hover {
     background-color: #dbf52f;
 }
-#navicon:hover span{
+
+#navicon:hover span {
     background-color: #dbf52f;
     background-color: black;
 }
 
-#navicon:hover span{
+#navicon:hover span {
     transition: .3s linear;
 }
 
-#navicon:hover span:first-child{
-   width: 60%;
+#navicon:hover span:first-child {
+    width: 60%;
 }
 
-#navicon:hover span:last-child{
+#navicon:hover span:last-child {
     width: 90%;
- }
+}
 
 nav h2 {
     font-size: 1.2rem;
@@ -200,7 +201,7 @@ nav h2 {
     color: #dbf52f;
 }
 
-.navlinks{
+.navlinks {
     position: fixed;
     top: 0;
     right: -300px;
@@ -208,17 +209,17 @@ nav h2 {
     max-width: 250px;
     background-color: #141414;
     height: 100vh;
-    padding:2rem 1.5rem;
+    padding: 2rem 1.5rem;
     transition: .3s ease-in;
     z-index: 1000;
 
 }
 
-.navactive{
-    right:0%;
+.navactive {
+    right: 0%;
 }
 
-.navlinks a{
+.navlinks a {
     color: white;
     display: block;
     font-size: 1.5rem;
@@ -227,7 +228,7 @@ nav h2 {
     position: relative;
 }
 
-.navlinks a::before{
+.navlinks a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -239,22 +240,22 @@ nav h2 {
     /* padding-bottom: 10px; */
 }
 
-.navlinks a:hover::before{
+.navlinks a:hover::before {
     width: 100%;
 }
 
 /* section start here  */
 
-section{
+section {
     padding: 3rem 5% 5rem;
 }
 
-.section-heading{
+.section-heading {
     font-size: 2.5rem;
     position: relative;
 }
 
-.section-heading::after{
+.section-heading::after {
     content: "";
     position: absolute;
     bottom: -30%;
@@ -268,12 +269,12 @@ section{
 }
 
 @keyframes expans {
-    to{
+    to {
         width: 10%;
     }
 }
 
-.skill-container{
+.skill-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -282,7 +283,7 @@ section{
 
 }
 
-.skill{
+.skill {
     flex-basis: 30%;
     background-color: #141414;
     padding: 1.5rem;
@@ -293,7 +294,7 @@ section{
 }
 
 
-.skill::before{
+.skill::before {
     content: "";
     position: absolute;
     top: 0;
@@ -304,24 +305,25 @@ section{
     transition: .3s linear;
 }
 
-.skill:hover::before{
+.skill:hover::before {
     height: 100%;
 }
 
 
-.skill i,.project i{
+.skill i,
+.project i {
     font-size: 3rem;
     margin-bottom: 1rem;
     position: relative;
     z-index: 10;
 }
 
-.skill h2{
+.skill h2 {
     position: relative;
     z-index: 10;
 }
 
-.jquery-img{
+.jquery-img {
     width: 50px;
     height: 50px;
     position: relative;
@@ -329,7 +331,8 @@ section{
     object-fit: contain;
 }
 
-.project,.achivement{
+.project,
+.achivement {
     flex-basis: 30%;
     background-color: #141414;
     padding: 1.5rem;
@@ -338,47 +341,140 @@ section{
     cursor: pointer;
 }
 
-.tech{
+.tech {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
     justify-content: center;
 }
-.tech span{
+
+.tech span {
     background-color: rgb(77, 67, 67);
     color: white;
     border-radius: 15px;
-    padding:5px 20px;
+    padding: 5px 20px;
     margin-bottom: 1rem;
 }
 
-.projectdate{
+.projectdate {
     text-align: end;
     background-color: #1c1c1c;
-    padding:10px 20px;
+    padding: 10px 20px;
     display: inline-block;
     border-radius: 10px;
     text-transform: capitalize;
 }
 
-.achivement p{
+.achivement p {
     background-color: #1c1c1c;
     border-radius: 10px;
     padding: 1rem;
-    margin:1rem 0 1.5rem;
+    margin: 1rem 0 1.5rem;
 }
 
-.achivement a{
+.achivement a {
     color: white;
 }
 
-#achivement-container{
+#achivement-container {
     justify-content: center;
     gap: 5%;
 }
 
-footer{
+/* contact section  */
+
+#contact h1 {
+    text-align: center;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 500px;
+    /* border: 2px solid white; */
+    margin: 2rem auto;
+}
+
+#contact form input {
+    width: 100%;
+    background-color: #141414;
+    border: none;
+    padding: 10px;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+
+}
+
+#contact form input:focus+label {
+    color: #dbf52f;
+}
+
+
+#contact form textarea:focus+label {
+    color: #dbf52f;
+}
+
+#contact form input:focus {
+    outline: 1.5px solid white;
+}
+
+#contact form textarea {
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    background-color: #141414;
+    color: white;
+    padding: 10px;
+}
+
+#contact form textarea:focus {
+    border: none;
+    outline: 2px solid #fff;
+}
+
+#contact form div {
+    margin: 1rem 0;
+    position: relative;
+    padding-top: 30px;
+}
+
+#contact form label {
+    display: inline-block;
+    padding: 10px 0;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+#contact form button:disabled {
+    background-color: #1c1c1c;
+    color: white;
+    cursor: not-allowed;
+}
+
+/* alert */
+
+.alert {
+    position: fixed;
+    top: -50px;
+    transition: .3s ease;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+    height: 50px;
+    background-color: red;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+
+footer {
     background-color: #0e151d;
     padding: 2rem 3rem 3rem;
     display: flex;
@@ -387,18 +483,18 @@ footer{
     color: white;
 }
 
-footer a{
+footer a {
     color: white;
     line-height: 30px;
 }
 
-footer .footerflex{
+footer .footerflex {
     display: flex;
     flex-direction: column;
 }
 
 
-footer div i{
+footer div i {
     padding-inline: .5rem;
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -406,78 +502,90 @@ footer div i{
 
 /* responsiveness  */
 
-@media(max-width:750px){
-    header .header-content .name{
-       font-size: 3rem;
+@media(max-width:750px) {
+    header .header-content .name {
+        font-size: 3rem;
     }
-    header .header-content .subname{
-       font-size: 2rem;
+
+    header .header-content .subname {
+        font-size: 2rem;
     }
-    header .header-content p{
-       font-size: 0.5rem;
+
+    header .header-content p {
+        font-size: 0.5rem;
     }
-    nav h2{
+
+    nav h2 {
         margin-left: 10%;
     }
 }
 
-@media(max-width:480px){
-    header .header-content .name{
-       font-size: 2rem;
+@media(max-width:480px) {
+    header .header-content .name {
+        font-size: 2rem;
     }
-    header .header-content .subname{
-       font-size: 1rem;
+
+    header .header-content .subname {
+        font-size: 1rem;
     }
-    header .header-content p{
-       font-size: 10px;
+
+    header .header-content p {
+        font-size: 10px;
     }
 }
 
-@media(max-width:850px){
-    .skill,.project,.achivement{
+@media(max-width:850px) {
+
+    .skill,
+    .project,
+    .achivement {
         flex-basis: 45%;
     }
 }
 
-@media(max-width:650px){
-    .skill,.project,.achivement{
+@media(max-width:650px) {
+
+    .skill,
+    .project,
+    .achivement {
         flex-basis: 90%;
     }
 
-    .skill-container{
+    .skill-container {
         justify-content: center;
     }
 }
 
-@media (max-width:500px){
-    footer{
+@media (max-width:500px) {
+    footer {
         display: block;
         padding: 2rem 1rem 3rem;
         text-align: start;
     }
 
-    .footerflex{
+    .footerflex {
         align-items: flex-start;
     }
 
-    footer .center{
+    footer .center {
         text-align: start;
     }
 
-    footer div i{
+    footer div i {
         padding-inline: .5rem;
         font-size: 1.5rem;
     }
 
-    footer a{
+    footer a {
         color: white;
         line-height: 0px;
     }
 
-    footer h2{
+    footer h2 {
         margin-top: 1.2rem;
     }
-    footer div:nth-child(2){
+
+    footer div:nth-child(2) {
         margin-top: 0rem;
     }
 }

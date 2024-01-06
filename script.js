@@ -59,7 +59,7 @@ const myprojects = [
         projectname: "Crud react app",
         icon: '<i class="fa-solid fa-users-line"></i>',
         link: "https://crudreactasignment.netlify.app/",
-        tech: ["React","Redux"],
+        tech: ["React", "Redux"],
         date: "December 2023"
     },
     {
@@ -80,7 +80,7 @@ const myprojects = [
         projectname: "React Asignment",
         icon: '<i class="fa-solid fa-chalkboard-user"></i>',
         link: "https://fanciful-piroshki-68986b.netlify.app/",
-        tech: ["React","React Router Dom","Context API"],
+        tech: ["React", "React Router Dom", "Context API"],
         date: "December 2023"
     },
 
@@ -138,3 +138,67 @@ ScrollReveal().reveal('.project', {
     distance: '200%',
     origin: 'bottom',
 });
+
+
+// form handleling
+
+function showAlert(msg, bgColor) {
+    let alert = document.getElementById("alert")
+    alert.innerHTML = `<h3>${msg}</h3>`;
+    alert.style.background = bgColor;
+    alert.style.top = "0%"
+
+    setTimeout(() => { alert.style.top = "-50px" }, 1500)
+}
+
+function sendEmail(senderName,senderNumber,senderMessage) {
+    (function () {
+        emailjs.init("8c3Sgn1ib4YDJWhCF");
+    })()
+
+    var params = {
+        name: senderName,
+        number: senderNumber,
+        message: senderMessage
+    }
+
+    var serviceID = "service_cnjrihq";
+    var templeteID = "template_dyc6w7m";
+
+    emailjs.send(serviceID, templeteID, params)
+        .then(() => {
+            showAlert("message sent successfully!", "green")
+            form.reset()
+        }).catch((e) => showAlert("message not send..", "red"))
+}
+
+
+function handleform(e) {
+
+
+
+    e.preventDefault()
+    var data = new FormData(form)
+    const obj = Object.fromEntries(data)
+
+    const {name,number,message} = obj;
+
+    if (name == "") {
+        return showAlert("Enter valid name..", "red")
+    }
+
+    if (number.length < 10) {
+        return showAlert("Number must be 10 digits", "red")
+    }
+
+    if (message == "") {
+        return showAlert("Message can not be empty", "red")
+    }
+
+
+
+    sendEmail(name,number,message)
+
+}
+
+form.addEventListener("submit", handleform)
