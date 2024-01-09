@@ -83,6 +83,13 @@ const myprojects = [
         tech: ["React", "React Router Dom", "Context API"],
         date: "December 2023"
     },
+    {
+        projectname: "Dashboard",
+        icon: '<i class="fa-solid fa-user-secret"></i>',
+        link: "https://reactdashboardwithchart.netlify.app/",
+        tech: ["React", "Chart JS"],
+        date: "January 2024"
+    },
 
 ]
 
