@@ -117,7 +117,7 @@ myprojects.forEach((e) => {
 document.querySelectorAll(".project").forEach((e) => {
     e.addEventListener("click", () => {
         let link = e.getAttribute("data-link")
-        document.location.replace(link)
+        document.location.replace(link,"_blank")
     })
 })
 
