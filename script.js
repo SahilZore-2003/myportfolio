@@ -110,7 +110,7 @@ myprojects.forEach((e) => {
 document.querySelectorAll(".project").forEach((e) => {
     e.addEventListener("click", () => {
         let link = e.getAttribute("data-link")
-        document.location.replace(link)
+        window.open(link)
     })
 })
 
@@ -151,7 +151,7 @@ function showAlert(msg, bgColor) {
     setTimeout(() => { alert.style.top = "-50px" }, 1500)
 }
 
-function sendEmail(senderName,senderNumber,senderMessage) {
+function sendEmail(senderName, senderNumber, senderMessage) {
     (function () {
         emailjs.init("8c3Sgn1ib4YDJWhCF");
     })()
@@ -181,7 +181,7 @@ function handleform(e) {
     var data = new FormData(form)
     const obj = Object.fromEntries(data)
 
-    const {name,number,message} = obj;
+    const { name, number, message } = obj;
 
     if (name == "") {
         return showAlert("Enter valid name..", "red")
@@ -197,7 +197,7 @@ function handleform(e) {
 
 
 
-    sendEmail(name,number,message)
+    sendEmail(name, number, message)
 
 }
 
