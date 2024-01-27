@@ -48,13 +48,7 @@ const myprojects = [
         tech: ["html", "css"],
         date: "october 2023"
     },
-    {
-        projectname: "Ecommerce using react ",
-        icon: '<i class="fa-solid fa-shop"></i>',
-        link: "https://shopperecommercereact.netlify.app/",
-        tech: ["React", "React Router Dom", "Context Api"],
-        date: "December 2023"
-    },
+    
     {
         projectname: "Crud react app",
         icon: '<i class="fa-solid fa-users-line"></i>',
@@ -77,23 +71,30 @@ const myprojects = [
         date: "November 2023"
     },
     {
-        projectname: "React Asignment",
-        icon: '<i class="fa-solid fa-chalkboard-user"></i>',
-        link: "https://fanciful-piroshki-68986b.netlify.app/",
-        tech: ["React", "React Router Dom", "Context API"],
-        date: "December 2023"
-    },
-    {
         projectname: "Dashboard",
         icon: '<i class="fa-solid fa-user-secret"></i>',
         link: "https://reactdashboardwithchart.netlify.app/",
         tech: ["React", "Chart JS"],
         date: "January 2024"
     },
+    {
+        projectname: "Ecommerce using react ",
+        icon: '<i class="fa-solid fa-shop"></i>',
+        link: "https://shopperecommercereact.netlify.app/",
+        tech: ["React", "React Router Dom", "Context Api"],
+        date: "December 2023"
+    },
+    {
+        projectname: "Movie Rating",
+        icon: '<i class="fa-solid fa-film"></i>',
+        link: "https://movix-sigma-umber.vercel.app/",
+        tech: ["React", "Redux", "TMDB Api"],
+        date: "January 2024"
+    },
 
 ]
 
-myprojects.forEach((e) => {
+myprojects.reverse().forEach((e) => {
     project_container.innerHTML +=
         `
     <div class="project" data-link="${e.link}">
@@ -124,6 +125,7 @@ document.querySelectorAll(".project").forEach((e) => {
 navicon.addEventListener("click", () => {
     navbar.classList.toggle("navactive")
 })
+
 
 navlinks.forEach((e) => {
     e.addEventListener("click", () => navbar.classList.remove("navactive"))
