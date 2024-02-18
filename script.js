@@ -91,6 +91,13 @@ const myprojects = [
         tech: ["React", "Redux", "TMDB Api"],
         date: "January 2024"
     },
+    {
+        projectname: "Book Store",
+        icon: '<i class="fa-solid fa-book"></i>',
+        link: "https://bookstoreusingreactfirebase.netlify.app/",
+        tech: ["React", "Firebase", "context Api","React router dom"],
+        date: "february 2024"
+    },
 
 ]
 
